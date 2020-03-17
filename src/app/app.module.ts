@@ -9,13 +9,14 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: 'products/:productId', component: ProductListComponent },
-    ])
-  ],
+    imports: [
+        BrowserModule,
+            ReactiveFormsModule,
+                RouterModule.forRoot([
+                      { path: '', component: ProductListComponent },
+                            { path: 'products/:productId', component: ProductDetailsComponent },
+                                ])
+                                  ],
   declarations: [
     AppComponent,
     TopBarComponent,
